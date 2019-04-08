@@ -1,11 +1,11 @@
 #!/bin/bash
-TMP_DIR="tmp.$(date +'%s')"
-mkdir $TMP_DIR
-pushd $TMP_DIR
+DATE="$(date +'%s')"
+mkdir tmp.$DATE
+pushd tmp.$DATE
 git clone git@github.com:abe-y/yum-check-update.git
 cp -r yum-check-update /usr/local/
-popd $TMP_DIR
-rm -rf $TMP_DIR
+popd tmp.$DATE
+rm -rf tmp.$DATE
 
 echo '[plugin.metrics.yum-check-update]
 command = "/usr/local/yum-check-update/bin/yum-check-update"
