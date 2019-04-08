@@ -1,0 +1,11 @@
+#!/bin/bash
+updates=$(yum check-update |wc -l 2>/dev/null)
+securities=$(yum check-update --security |wc -l 2>/dev/null)
+
+echo -n "$(basename $0).update "
+echo -n "$updates "
+echo "$updates "
+
+echo -n "$(basename $0).security "
+echo -n "$securities "
+echo "$securities"
