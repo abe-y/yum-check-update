@@ -1,5 +1,4 @@
-# yum-check-update
-#  mackerel-agent plugin 
+# yum-check-update (mackerel-agent plugin)
 
-# install 
+## install 
 curl -fsSL https://raw.githubusercontent.com/abe-y/yum-check-update/master/install.sh | sudo bash
