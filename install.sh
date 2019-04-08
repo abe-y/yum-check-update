@@ -2,7 +2,7 @@
 DATE="$(date +'%s')"
 mkdir tmp.$DATE
 pushd tmp.$DATE
-git clone git@github.com:abe-y/yum-check-update.git
+git clone https://github.com/abe-y/yum-check-update.git
 cp -r yum-check-update /usr/local/
 popd tmp.$DATE
 rm -rf tmp.$DATE
